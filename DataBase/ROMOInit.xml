@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="gb2312"?>
+<ROMOTOOL>
+	<GrAtom Class="List" Identifier="FunctionList" RootId="1">
+		<GrAtom Class="List" Identifier="ParsingFunctionList" Id="1">
+			<GrAtom Name="Item0" Enable="true">
+				<Property Class="MenuItem" Identifier="ItemName" Type="1">---请选择---</Property>
+				<Property Class="MenuItem" Identifier="Itemdetails">---请选择---</Property>
+			</GrAtom>
+			<GrAtom Name="Item1" Enable="true">
+				<Property Class="MenuItem" Identifier="ItemName" Type="3">单个节点</Property>
+				<Property Class="MenuItem" Identifier="Itemdetails">
+					单个节点(目前有2种Mode)：
+					Mode1：
+					  在Path处输入GMF XML的相关路径，
+					  在Note处输入想要处理的节点号
+					  点击提取按钮后，结果将显示在Result处
+					Mode2：
+					  Path处保持空白，
+					  在Note处输入想要翻译的文本ID
+					  点击提取按钮后，结果将显示在Result处
+				</Property>
+			</GrAtom>
+			<GrAtom Name="Item2" Enable="true">
+				<Property Class="MenuItem" Identifier="ItemName" Type="1">提取界面文本</Property>
+				<Property Class="MenuItem" Identifier="Itemdetails">
+					提取界面文本
+					  在Path处输入GMF XML的相关路径，
+					  在Note处输入想要处理的节点号
+					  点击提取按钮后，结果将显示在Result处
+				</Property>
+			</GrAtom>
+			<GrAtom Name="Item3" Enable="true">
+				<Property Class="MenuItem" Identifier="ItemName" Type="1">动作测试流程</Property>
+				<Property Class="MenuItem" Identifier="Itemdetails">
+					动作测试流程
+					  在Path处输入GMF XML的相关路径，
+					  可空着，或是在Note处直接输入准确的目标节点号
+					  点击提取按钮后，结果将显示在Result处
+				</Property>
+			</GrAtom>
+			<GrAtom Name="Item4" Enable="true">
+				<Property Class="MenuItem" Identifier="ItemName" Type="1">提取学习过程</Property>
+				<Property Class="MenuItem" Identifier="Itemdetails">
+					提取学习过程
+					  在Path处输入GMF XML的相关路径，
+					  可空着，或是在Note处直接输入准确的目标节点号
+					  点击提取按钮后，结果将显示在Result处
+				</Property>
+			</GrAtom>
+			<GrAtom Name="Item5" Enable="false">
+				<Property Class="MenuItem" Identifier="ItemName" Type="1">提取ODX功能明细表</Property>
+				<Property Class="MenuItem" Identifier="Itemdetails">
+					提取ODX功能明细表
+				</Property>
+			</GrAtom>
+			<GrAtom Name="Item6" Enable="true">
+				<Property Class="MenuItem" Identifier="ItemName" Type="1">根据VIN判断车辆底盘</Property>
+				<Property Class="MenuItem" Identifier="Itemdetails">
+					根据VIN判断车辆底盘
+					  Note处为空，在Path处输入车辆的VIN码，
+					  点击提取按钮后，车辆底盘、年款信息将显示在Result处
+				</Property>
+			</GrAtom>
+			<GrAtom Name="Item7" Enable="true">
+				<Property Class="MenuItem" Identifier="ItemName" Type="2">翻译批量文本ID</Property>
+				<Property Class="MenuItem" Identifier="Itemdetails">
+					翻译批量文本ID：
+					  在Path处输入需要处理的信息
+					  点击提取按钮后，结果将显示在Result处
+				</Property>
+			</GrAtom>
+			<GrAtom Name="Item8" Enable="true">
+				<Property Class="MenuItem" Identifier="ItemName" Type="2">解析DAS的动作测试与特殊功能</Property>
+				<Property Class="MenuItem" Identifier="Itemdetails">
+					解析DAS的动作测试与特殊功能：
+					  在Path处输入要解析的.s文件路径
+					  - 若Note处为空，将默认会从该文件的start节点处开始解析
+					  - 若在Note处输入坐标信息poscol,posrow，则会从该文件的该节点处开始解析
+					  点击提取按钮后，结果将显示在Result处
+				</Property>
+			</GrAtom>
+			<GrAtom Name="Item9" Enable="true">
+				<Property Class="MenuItem" Identifier="ItemName" Type="3">处理周立功采数数据</Property>
+				<Property Class="MenuItem" Identifier="Itemdetails">
+					将周立功采数数据处理成我们方便使用的通信数据：
+						在Path处输入要处理的 单个文件/单个文件夹 的完整路径
+				</Property>
+			</GrAtom>
+			<GrAtom Name="Item_End" Enable="true">
+				<Property Class="MenuItem" Identifier="ItemName" Type="3">临时功能处理</Property>
+				<Property Class="MenuItem" Identifier="Itemdetails">
+					处理临时添加的功能
+				</Property>
+			</GrAtom>
+		</GrAtom>
+	
+		<GrAtom Class="List" Identifier="ParsingModeList" Id="2">
+			<GrAtom Name="Item1" Enable="true">
+				<Property Class="MenuItem" Identifier="ItemName">ODX</Property>
+			</GrAtom>
+			<GrAtom Name="Item2" Enable="true">
+				<Property Class="MenuItem" Identifier="ItemName">DAS</Property>
+			</GrAtom>
+		</GrAtom>
+	</GrAtom>
+</ROMOTOOL>

@@ -1,0 +1,57 @@
+/L1"MyStyle" C_LANG Line Comment = // Block Comment On = /* Block Comment Off = */ Escape Char = \ String Chars = "' File Extensions = C CPP CC CXX H HPP AWK TXT
+
+/TGBegin "Title_Level1"
+/TGFindStr = "^[\t]*===[=]*[ \t]+(.*)"
+/TGEnd
+/TGBegin "Title_Level2"
+/TGFindStr = "^[\t]*---[-]*[ \t]+(.*)"
+/TGEnd
+/TGBegin "Title_Act"
+/TGFindStr = "^(.*)\[Act_Laufzeit(.*)[\r\n]+(.*)\[ItemName:(.*)[\r\n]+[\t]+"
+/TGEnd
+/TGBegin "Title_Adp"
+/TGFindStr = "^(.*)\[Adp_Laufzeit(.*)"
+/TGEnd
+
+/Regexp Type = Perl
+/Delimiters = ~!@%^&*()-+=|\/{}[]:;"'<> ,	.?
+/Open Fold Strings = "{""[Act_Laufzeit""[Adp_Laufzeit""--- [""["
+/Close Fold Strings = "}""]Act_Laufzeit""]Adp_Laufzeit""--- ]""]"
+/Indent Strings = "-{"
+/Unindent Strings = "-}"
+
+/C1"Braces, comma, semicolon"
+(
+)
+,
+;
+[
+]
+{
+}
+
+/C2"Operators" STYLE_OPERATOR
+!
+$
+%
+&
+*
++
+-
+.
+// /
+:
+<
+=
+>
+?
+^
+|
+~
+
+/C3"Keywords" STYLE_KEYWORD
+delay
+return
+continue
+Act_Laufzeit
+Adp_Laufzeit

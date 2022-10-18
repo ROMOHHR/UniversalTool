@@ -1,0 +1,4 @@
+﻿  XTOOL4Benz.cpp
+f:\svn\workspace\platform\makers\gs_benz\publib_dig\worktools\提取菜单节点\universaltool\mfc4xmlparsingtool\src\xtool4benz.cpp(3631): warning C4800: “BOOL”: 将值强制为布尔值“true”或“false”(性能警告)
+  MFC4XMLParsingTool.vcxproj -> F:\SVN\workspace\platform\makers\GS_BENZ\PubLib_Dig\worktools\提取菜单节点\UniversalTool\Debug\xtool.exe
+  MFC4XMLParsingTool.vcxproj -> F:\SVN\workspace\platform\makers\GS_BENZ\PubLib_Dig\worktools\提取菜单节点\UniversalTool\Debug\xtool.pdb (Partial PDB)
